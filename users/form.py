@@ -1,7 +1,7 @@
-from django import froms
-from .models import personas
+from django import forms
+from .models import Persona
 
-class personaForm(forms.ModelForm):
-    class meta:
-        model = persona
+class PersonaForm(forms.ModelForm):
+    class Meta:
+        model = Persona
         fields = '__all__'
